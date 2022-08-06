@@ -1,0 +1,18 @@
+#logging:
+#  level:
+#    root: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo1
+    username: root
+    password: root
+  jackson:
+    date-format: YYYY-MM-DD HH:mm:ss
+    time-zone: GMT+8
+mybatis:
+  typeAliasesPackage: com.lig.demo1.entity
+  mapperLocations: classpath*:mapper/*Mapper.xml
+  # ?????????
+  configLocation: classpath:mybatis-config.xml
+
